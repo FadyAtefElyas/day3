@@ -1,4 +1,4 @@
-def call() {
-  sh 'sudo apt-get update'
-  sh 'sudo apt-get install -y nginx'
+#!usr/bin/env groovy
+def call( String name = 'human' ) {
+  echo " hello, $(name). "
 }
